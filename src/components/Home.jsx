@@ -1,17 +1,17 @@
 import useFetch from "../useFetch";
 import {useState} from "react"
 import { Link } from "react-router-dom";
-import.meta.env.VITE_API_URL
+
 
 
 const Home = ({searchTerm}) => {
-    const API_URL = import.meta.env.VITE_API_URL;
+    
     const [filter, setFilter] = useState("All");
   const {
     data,
     loading,
     error,
-  } = useFetch(`${API_URL}/api/events`);
+  } = useFetch("https://meet-sphere-xi.vercel.app/api/events");
 
    const events = Array.isArray(data) ? data : [];
 

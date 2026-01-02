@@ -3,14 +3,14 @@ import useFetch from "../useFetch";
 import { FaMapMarkerAlt, FaVideo } from "react-icons/fa";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import.meta.env.VITE_API_URL
+
 
 
 const EventDetails = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
+  
   const { id } = useParams();
   const { data: event, loading, error } = useFetch(
-    `${API_URL}/api/events/${id}`
+    `https://meet-sphere-xi.vercel.app/api/events/${id}`
   );
 
   if (loading) return <p className="text-center">Loading...</p>;
