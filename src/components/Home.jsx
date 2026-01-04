@@ -3,7 +3,6 @@ import {useState} from "react"
 import { Link } from "react-router-dom";
 
 
-
 const Home = ({searchTerm}) => {
     
     const [filter, setFilter] = useState("All");
@@ -38,7 +37,7 @@ const Home = ({searchTerm}) => {
 
   return (
     <div className="background">
-      <div className="container py-4">
+      <div className="container-fluid py-1 px-0">
         <div className="d-flex align-items-center mb-4">
         <h2 className="fw-bold m-0">Discover the events you like</h2>
 
@@ -49,7 +48,7 @@ const Home = ({searchTerm}) => {
         </select>
         </div>
 
-        <div className="row">
+        <div className="row ">
           {filteredEvents && filteredEvents.map((event) => (
             <div className="col">
             <Link to={`/events/${event._id}`}  className="text-decoration-none text-dark">

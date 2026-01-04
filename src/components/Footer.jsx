@@ -1,8 +1,8 @@
 const Footer = () => {
     return(
-        <footer>
+        <footer className="m-0 p-0">
 
-            <p className="text-center bg-dark text-light">© 2024 MeetUpApp. All rights reserved.</p>
+            <p className="text-center bg-dark text-light m-0 py-2">© 2024 MeetUpApp. All rights reserved.</p>
         </footer>
     )
 }

@@ -2,13 +2,13 @@ import {NavLink} from "react-router-dom"
 const Header = ({setSearchTerm}) => {
    return(
     <header>
-        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "gray", minHeight: "10vh" }}>
+        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "gray", minHeight: "14vh" }}>
         <div className="container-fluid">
             <a className="navbar-brand" href="#">
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFnqYPlAC9O7323ahFVwUQEkz0VUlCoxBbg&s"
                 alt="MeetUp"
-                width="80"
+                width="100"
                 height="55"
                 className="me-5"
             />

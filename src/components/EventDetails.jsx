@@ -20,7 +20,7 @@ if (!event) return <p>No event found</p>;
   return (
    <>
      <Header/>
-    <div className="container py-4">
+    <div className="container-fluid py-1 px-0">
       <div className="row">
 
         {/* LEFT SECTION */}
@@ -37,16 +37,16 @@ if (!event) return <p>No event found</p>;
             className="img-fluid rounded mb-4"
           />
 
-          {/* Overview */}
-          <h5>Overview</h5>
-          <p>{event.description?.overview || event.description?.text || "No overview available."}</p>
+         
+          <h5 className="overview">Overview</h5>
+          <p style={{textAlign: "left"}}>{event.description?.overview || event.description?.text || "No overview available."}</p>
 
 
           {/* Agenda */}
-          <h5>Agenda</h5>
+          <h5 className="mt-3" style={{textAlign: "left"}}>Agenda</h5>
 
           {event.description?.agenda.length>0 ? (
-          <ul>
+          <ul className="agenda-list">
             {event.description.agenda.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
@@ -55,7 +55,7 @@ if (!event) return <p>No event found</p>;
             <p>No agenda available.</p>
           )}
 
-          {/* Tags */}
+          
           <div className="mb-3">
             {event.tags?.map((tag, index) => (
               <span key={index} className="badge bg-secondary me-2">
@@ -100,7 +100,7 @@ if (!event) return <p>No event found</p>;
               <p className="fw-bold text-success">Free</p>
             )}
 
-            <button className="btn btn-danger w-100">RSVP</button>
+           
           </div>
         </div>
 

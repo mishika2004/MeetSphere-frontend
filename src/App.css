@@ -107,3 +107,19 @@
 .background{
   color: "#ffffff";
 }
+.agenda-list {
+  text-align: left;        
+  padding-left: 20px;      
+  margin-top: 8px;
+}
+
+.overview {
+  text-align: left;        
+      
+  margin-top: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
