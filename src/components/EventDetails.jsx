@@ -5,17 +5,24 @@ import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 
 
-
 const EventDetails = () => {
-  
+
   const { id } = useParams();
+
+  // const { data: speakers } = useFetch(
+  // `https://meet-sphere-xi.vercel.app/api/speakers/event/${id}`
+  //  );
+
+
+
   const { data: event, loading, error } = useFetch(
     `https://meet-sphere-xi.vercel.app/api/events/${id}`
   );
 
   if (loading) return <p className="text-center">Loading...</p>;
   if (error) return <p className="text-center text-danger">{error}</p>;
-if (!event) return <p>No event found</p>;
+ if (!event) return <p>No event found</p>;
+
 
   return (
    <>
@@ -66,25 +73,8 @@ if (!event) return <p>No event found</p>;
 
           
           <p><strong>Dress Code:</strong> {event.additionalInfo?.dressCode || "Not specified"}</p>
-          
+      
 
-          
-          {/* <h5 className="mt-4">Speakers</h5>
-          <div className="d-flex gap-3">
-            {event.speakers?.map((speaker) => (
-              <div key={speaker.name} className="card p-2 text-center" style={{ width: "140px" }}>
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="rounded-circle mb-2"
-                  width="60"
-                  height="60"
-                />
-                <strong>{speaker.name}</strong>
-                <small className="text-muted">{speaker.role}</small>
-              </div>
-            ))}
-          </div> */}
         </div>
 
         {/* RIGHT SECTION */}

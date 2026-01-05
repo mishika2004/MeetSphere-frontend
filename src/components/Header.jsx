@@ -2,7 +2,7 @@ import {NavLink} from "react-router-dom"
 const Header = ({setSearchTerm}) => {
    return(
     <header>
-        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "gray", minHeight: "14vh" }}>
+        <nav className="navbar navbar-expand-lg px-0 py-0" style={{ backgroundColor: "gray",height:"70px"}}>
         <div className="container-fluid">
             <a className="navbar-brand" href="#">
             <img
@@ -33,7 +33,7 @@ const Header = ({setSearchTerm}) => {
                 onChange = {(e) => setSearchTerm(e.target.value)}
             />
             </form>
-             <hr/>
+             
 
             </div>
         </nav>

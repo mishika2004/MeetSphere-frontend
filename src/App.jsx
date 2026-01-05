@@ -7,9 +7,9 @@ import './App.css'
 function App () {
   const [searchTerm, setSearchTerm] = useState("");
   return(
-    <div>
+    <div className="app-wrapper">
       <Header setSearchTerm = {setSearchTerm}/>
-      <hr/>
+      
       <Home searchTerm={searchTerm}/>
       <Footer/>
     </div>
