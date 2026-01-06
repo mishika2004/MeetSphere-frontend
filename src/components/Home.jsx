@@ -41,7 +41,7 @@ const Home = ({searchTerm}) => {
 
         <div className="home-header">
         <div className="d-flex align-items-center mb-4 ">
-        <h2 className="fw-bold m-0">Discover the events you like</h2>
+        <h2 className="fw-bold m-0 ">Discover the events you like</h2>
 
         <select className="form-select w-auto ms-auto" value={filter} onChange={(e) => setFilter(e.target.value)}>
             <option value="All">All</option>
