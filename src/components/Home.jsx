@@ -37,8 +37,10 @@ const Home = ({searchTerm}) => {
 
   return (
     <div className="background">
-      <div className="container-fluid py-1 px-0">
-        <div className="d-flex align-items-center mb-4">
+      <div className="container-fluid px-4">
+
+        <div className="home-header">
+        <div className="d-flex align-items-center mb-4 ">
         <h2 className="fw-bold m-0">Discover the events you like</h2>
 
         <select className="form-select w-auto ms-auto" value={filter} onChange={(e) => setFilter(e.target.value)}>
@@ -46,6 +48,7 @@ const Home = ({searchTerm}) => {
             <option value="Online">Online</option>
             <option value="Offline">Offline</option>
         </select>
+        </div>
         </div>
 
         <div className="row ">

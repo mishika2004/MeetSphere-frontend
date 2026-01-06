@@ -26,8 +26,9 @@ const EventDetails = () => {
 
   return (
    <>
+    
      <Header/>
-    <div className="container-fluid py-1 px-0">
+    <div className="container py-3 flex-grow-1">
       <div className="row">
 
         {/* LEFT SECTION */}
@@ -97,6 +98,7 @@ const EventDetails = () => {
       </div>
     </div>
     <Footer/>
+    
     </>
   );
 };
